@@ -4,8 +4,10 @@ from aiohttp import web
 from plugins import web_server
 
 import pyromod.listen
-from pyrogram import Client
-from pyrogram.enums import ParseMode
+from pyrofork import Client
+from pyrofork.enums import ParseMode
+from pyrofork import errors
+import asyncio  # Needed for handling flood waits
 import sys
 from datetime import datetime
 
